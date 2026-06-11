@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>farmersmarketdata.com</title>
+    <!-- Import libraries and link files  -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="script.js"></script>
+    <script src="helper.js"></script>
+   </head>
+  
+  <body style="background-image: url(images/yellow.jpg)" onload="init()">
+   
+          <!--banner-->
+        <div class="container center" id="banner">
+        <img src="images/banner2.png" id="bannerimg">
+        </div>
+          <!--links-->
+    <nav id ="links" class ="container">
+      <a href="index.html"><img src="images/home.png"></a>
+      <a href="info.html"><img src="images/info.png"></a>
+      <a href="analysis.html"><img src="images/analysis.png"></a>
+    </nav>
+
+          <!--Content-->
+  <div id="cow" class="center">
+    <div class="container center">
+      <h1 style="color:rgb(240, 240, 232); text-shadow: 2px 4px rgb(31, 25, 25); font-family: 'Courier New', monospace; font-size: 23pt;">Welcome to the farmers market data website!</h1>
+    </div>
+      
+
+   <div class="container center">
+             <h1 class="heading">OUR GOAL</h1>
+          </div>
+
+      <div class="center container">
+        <div class="card home"><p>For this website in particular, users can get access to and learn about Farmer Markets in NYC and their location, year opened, operating hours, and if or if not they accept EBT. Users are able to filter this data based on their preferences and can also access analytics relating to the data.</p></div>
+      </div>   
+<div class="container center">
+             <h1 class="heading">ABOUT NYC OPEN DATA</h1>
+          </div>
+
+      <div class="center container">
+        <div class="card home"><p>NYC open data is a free, public use website with public data from many sources and services in New York City. The data provided comes directly from the city government and is available to any and all users online who want to view a certain piece of information. You can view their website <a href="https://opendata.cityofnewyork.us/">here.</a></p></div>
+      </div>
+
+      <div class="container center">
+  <h1 class="heading">EXPLORE</h1>
+</div>
+
+<div class="container center">
+  <div class="card home">
+    <h1>DATA INFO</h1>
+    <img src="images/explore1.jpg" class="fitted">
+    <br>
+    <a href="info.html" class="button">Browse</a>
+  </div>
+ 
+  <div class="card home">
+    <h1>ANALYTICS</h1>
+    <img src="images/explore2.jpg" class="fitted" id="modal_output">
+    <br>
+      <a href="analysis.html" class="button">Browse</a>    
+  </div>
+</div>
+
+<div class="container" id="s">
+  <!--<img src="images/cow.webp" onclick="alert('Moo!')" id="cowimage">-->
+<img src="images/cow.webp" onclick="alert('Moo!')" id="cowimage">
+<div class="card"id="hometext">
+  <h1>Click on the cow for a cool message!</h1>
+</div>
+  </div>
+  </div>
+       
+
+
+          <!--Footer-->
+ <div id="footer" class="container center">
+      <p>Website created by Khloe Islam and Qinhan Wang ©2026
+      <br><span class="container center">All data is provided by NYC Open Data</span>
+      </p>
+    </div>  
+    
+</body>
+</html>

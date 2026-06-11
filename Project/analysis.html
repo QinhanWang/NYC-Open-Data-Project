@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>farmersmarketdata.com</title>
+
+    <!-- LeafletJS CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- LeafletJS JS file (must place after Leaflet's CSS file) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Import libraries and link files  -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="c3.css" rel="stylesheet" type="text/css"/>
+        <script src="d3.js"></script>
+        <script src="c3.js"></script>
+        <script src="helper.js"></script>
+        <script src="script.js"></script>  
+      </head>
+  
+  <body style="background-image: url(images/yellow.jpg)" onload="init()">
+   
+          <!--banner-->
+    <div class="container center" id="banner">
+    <img src="images/banner2.png" id="bannerimg">
+    </div>
+          <!--links-->
+    <nav id ="links" class ="container">
+      <a href="index.html"><img src="images/home.png"></a>
+      <a href="info.html"><img src="images/info.png"></a>
+      <a href="analysis.html"><img src="images/analysis.png"></a>
+    </nav>
+
+<!--Analytics-->
+<div class="container center">
+    <h1 style="font-size: 30pt; color:rgb(75, 59, 59)">Data Analytics</h1>
+</div>
+
+  <div class="center container">
+    <div class="card" style="font-size:15pt;">Here, you will find various data charts pertaining to a certain piece of information found on the data cards. Browse around! You can also change which type of chart you want to view the information on.</div>
+  </div>
+
+  <!--anay1-->
+<div class="container center">
+  <div id="panel">
+
+  <div class="cards">
+    <h2>Search By Borough</h2>
+    <hr>
+    <p>This data looks at the percentage of locations opened in a specific borough</p>
+      <select id="chartType" style="width:100px;height:30px;">
+        <option value="bar">Bar</option>
+        <option value="pie">Pie</option>
+        <option value="donut">Donut</option>
+      </select>
+      <a class="button" onclick="accidentsByBorough()"> Show Chart </a>
+  </div> 
+</div>
+
+<!-- div for chart -->
+  <div class="show" style = "border:5px ridge rgb(85, 93, 77);">
+    <div id = "chart" style ="height:235px"></div> 
+  </div>
+</div>
+
+
+<!--anay2-->
+<div class="container center">
+  <div id="panel">
+
+  <div class="cards">
+    <h2>Search By Year opened</h2>
+    <hr>
+    <p>This dataset looks at the percentage of farmer market locations opened between 2018 and 2025</p>
+      <select id="chartTypes" style="width:100px;height:30px;">
+        <option value="bar">Bar</option>
+        <option value="pie">Pie</option>
+        <option value="donut">Donut</option>
+      </select>
+      <a class="button" onclick="accidentsByborough()"> Show Chart </a>
+  </div> 
+</div>
+
+<!-- div for chart -->
+  <div class="show" style = "border:5px ridge rgb(85, 93, 77);">
+    <div id = "charts" style ="height:235px;"></div> 
+  </div>
+</div>
+
+<!--Footer-->
+ <div id="footer" class="container center">
+      <p>Website created by Khloe Islam and Qinhan Wang ©2026
+      <br><span class="container center">All data is provided by NYC Open Data</span>
+      </p>
+ </div>  
+ </body>
+</html>
